@@ -7,3 +7,12 @@
 example_images/
 # Ignore intermediate files
 3.preprocess-features/intermediate_files
+
+.snakemake
+.cytosnake
+workflows
+logs
+results
+data
+configs
+features

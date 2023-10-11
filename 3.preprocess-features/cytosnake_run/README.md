@@ -41,3 +41,20 @@ Then take you out of the `CytoSnake` folder.
 ```bash
 pip install -e && cd ..
 ```
+
+### Setting up your data with CytoSnake
+
+First you need to initalize the current directory into a `ProjectDirectory`.
+This helps `CytosSnake` know that there is a project within the current directory and no other datasets should be accounted with using the directory.
+This is a great way to prevent overwriting directories with other datasets.
+To execute, type:
+
+```bash
+cytosnake init -d ../../2.extract-features/features/*.sqlite -m ../../2.extract-features/features/metadata -b ../../2.extract-features/features/barcode_platemap.csv
+```
+
+Now that the data is initialized into the `ProjectDirectory`, you can select a workflow to run your analysis.
+
+```bash
+cytosnake run cp_process
+```
